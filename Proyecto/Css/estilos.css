@@ -1,0 +1,261 @@
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    background-color:white;
+    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+ width: 100%;
+
+}
+img{
+    width: 150px;
+    height: 80px;
+   
+   
+}
+nav{
+    width: 1000px;
+    margin: 20px auto;
+    /* overflow: hidden; */
+    border-radius: 3px;
+    background: black ;
+    border-bottom: 1px solid #f7f3f3;
+    
+
+}
+nav ul li{
+    list-style: none;
+}
+
+.search_bar{
+       width: 15%;
+       padding: 7px 10px ;
+       box-sizing: border-box;
+        position: relative;
+        float: right;
+        right: 100px;
+
+}
+.search_bar input{
+    width: 180px;
+    height: auto;
+    border-radius: 50px;
+    border-bottom:1px solid #858585 ;
+    padding: 0px 10px 0px 25px;
+    box-sizing: border-box;
+    height: 22px;
+    
+
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,.7);
+    
+}
+
+.icon-home{
+    display: block;
+    position: relative;
+    top: 2px;
+   
+}
+.icon-search{
+    position: absolute;
+    bottom:10px  ;
+     left: 15px;
+     color: black;
+     text-decoration:none;
+   
+}
+
+h1{
+    display: inline-flex;
+    font-style:italic;
+    color: yellow;
+}
+.menu{
+    width: 1000px;
+    margin: 30px auto;
+    background: black;
+    display: table;
+    table-layout: fixed;
+    float: left;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+   
+    
+}
+.menu li a {
+    display: block;
+    padding:15px 20px ;
+     font-family:"Myriad Pro", Arial;
+     text-decoration: none;
+     color: white;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.3);
+}
+.menu li a :hover{
+    background:rgba(8, 8, 8, 0.3) ;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: none;
+    box-shadow: inset 0px 3px 2px rgba(0,0,0,.1);
+}
+
+.menu li:first-child{
+    border-left: none;
+
+}
+.menu li:first-child:hover{
+   border-left: none;
+
+}
+.submenu{
+    position: absolute;
+    background: rgb(19, 18, 18);
+    width: 120%;
+    display: none;
+    
+}
+.submenu li a{
+    display: block;
+    padding: 20px ;
+    color:#fff;
+    font-family: "Myriad Pro", Arial;
+    text-decoration: none;
+    
+    }
+.menu ul li:hover {
+        background:#864449;
+       }
+.menu li:hover .submenu{
+    display: block;
+}
+.slider{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 50%;
+    height: 50%;
+    width: 100%;
+
+}
+@keyframes cambio{
+    0%{margin-left: 0%;}
+    20%{margin-left:  0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left:-300%;}
+}
+
+
+
+footer.final{
+    clear: both;
+    background:rgb(82, 125, 150);
+    text-align: center;
+}
+footer.final img{
+    width: 30px;
+    height: 30px;
+}
+    
+.constainer{
+    width: 100%;
+    max-width: 1200px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+}
+.constainer .card{
+    width: 280px;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 2px white;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.constainer .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px white;
+}
+.constainer .card img{
+    width: 300px;
+    height: 200px;
+
+}
+.constainer .card p{
+    color: yellow;
+}
+.constainer .card h3{
+    color: yellow;
+}
+
+header table{
+    background-color: black;
+    display: flex;
+
+}
+header table img{
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    
+}
+nav h4{
+    display: inline;
+    border: 1px solid black;
+    padding: 10;
+    background-color:black ;
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer.fin{
+    clear: both;
+    background:rgb(168, 146, 131);
+    text-align: center;
+    width: 100%;
+}
+footer.fin img{
+    width: 30px;
+    height: 30px;
+}
+    

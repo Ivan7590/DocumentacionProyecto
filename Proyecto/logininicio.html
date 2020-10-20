@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="loginApp">
+    <head>
+        <meta name ="autor" content="cristina" ; charset="UTF-8">
+        <TItle> Validación del Login </TItle>
+        <link rel="stylesheet" href="Css/estilogin.css">
+        <script src="login.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="firebase.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="loginController.js"></script>
+    </head>
+    <body ng-controller="loginController">
+        <form class="formulario">
+            <h3>LOGIN</h3>
+            <div class="contenedor">
+                <div class="input.cantenedor">
+                    <label>Usuario :</label>
+                    <input type="text" name="username" id="username" placeholder="&#128272; Email"  ng-model="loginEmailInput" />
+                    <label>Password :</label>
+                    <input type="password" name="password" id="password" placeholder="&#128272;password"  ng-model="loginPasswordInput" />
+                <input type="button" ng-click="loginUser()" value="Login" id="submit" />
+                <p>Al registar, aceptas nuestras Condiciones de uso y
+                     Politica de privacidad</p>
+               <center><a  class="link" href="login.html">Registrate</a>
+            </div>
+        </form>
+            
+    </body>
+</html>
